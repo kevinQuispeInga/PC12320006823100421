@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="PC12320006823100421.Domain/PC12320006823100421.Core.csproj" />
+  <Project Path="PC12320006823100421.CORE/PC12320006823100421.CORE.csproj" Id="fcb44def-0e28-401d-b4a5-5f145aa670c6" />
   <Project Path="PC12320006823100421/PC12320006823100421.API.csproj" />
 </Solution>
