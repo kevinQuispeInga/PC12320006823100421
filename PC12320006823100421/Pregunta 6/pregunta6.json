@@ -1,0 +1,138 @@
+{
+  "info": {
+    "name": "Pregunta6",
+    "_postman_id": "12345678-abcd-1234-abcd-123456789012",
+    "description": "Pruebas GET POST PUT DELETE para TipoServicio y OrdenServicio",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "TipoServicio GET",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5072/api/TipoServicio",
+          "host": ["http://localhost:5072"],
+          "path": ["api", "TipoServicio"]
+        }
+      }
+    },
+    {
+      "name": "TipoServicio POST",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Cambio de aceite\",\n  \"precioBase\": 80\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5072/api/TipoServicio",
+          "host": ["http://localhost:5072"],
+          "path": ["api", "TipoServicio"]
+        }
+      }
+    },
+    {
+      "name": "TipoServicio PUT",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 1,\n  \"nombre\": \"Cambio de aceite premium\",\n  \"precioBase\": 120\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5072/api/TipoServicio",
+          "host": ["http://localhost:5072"],
+          "path": ["api", "TipoServicio"]
+        }
+      }
+    },
+    {
+      "name": "TipoServicio DELETE",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5072/api/TipoServicio/1",
+          "host": ["http://localhost:5072"],
+          "path": ["api", "TipoServicio", "1"]
+        }
+      }
+    },
+    {
+      "name": "OrdenServicio GET",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5072/api/OrdenServicio",
+          "host": ["http://localhost:5072"],
+          "path": ["api", "OrdenServicio"]
+        }
+      }
+    },
+    {
+      "name": "OrdenServicio POST",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fechaIngreso\": \"2026-05-28\",\n  \"descripcionProblema\": \"Falla en los frenos\",\n  \"costoEstimado\": 180,\n  \"estado\": \"Pendiente\",\n  \"vehiculoId\": 1,\n  \"tipoServicioId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5072/api/OrdenServicio",
+          "host": ["http://localhost:5072"],
+          "path": ["api", "OrdenServicio"]
+        }
+      }
+    },
+    {
+      "name": "OrdenServicio PUT",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 1,\n  \"fechaIngreso\": \"2026-05-28\",\n  \"descripcionProblema\": \"Falla corregida\",\n  \"costoEstimado\": 220,\n  \"estado\": \"En proceso\",\n  \"vehiculoId\": 1,\n  \"tipoServicioId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5072/api/OrdenServicio",
+          "host": ["http://localhost:5072"],
+          "path": ["api", "OrdenServicio"]
+        }
+      }
+    },
+    {
+      "name": "OrdenServicio DELETE",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5072/api/OrdenServicio/1",
+          "host": ["http://localhost:5072"],
+          "path": ["api", "OrdenServicio", "1"]
+        }
+      }
+    }
+  ]
+}
