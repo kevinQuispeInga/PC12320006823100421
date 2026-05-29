@@ -1,8 +1,8 @@
 ﻿using PC12320006823100421.CORE.CORE.Entities;
 
-namespace PC12320006823100421.CORE.CORE.Interfaces
+namespace PC12320006823100421.CORE.Core.Interfaces
 {
-    public interface IOrdenServicioService
+    public interface IOrdenServicioRepository
     {
         Task<IEnumerable<OrdenServicio>> GetAll();
         Task<OrdenServicio> GetById(int id);
