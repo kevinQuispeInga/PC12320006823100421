@@ -19,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PC12320006823100421.CORE\PC12320006823100421.CORE.csproj" />
+  </ItemGroup>
+
 </Project>
